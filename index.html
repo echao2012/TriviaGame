@@ -19,7 +19,32 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Trivia Game</h1>
+
+                <!-- Start button -->
+                <button type="button" class="btn btn-primary" id="start-btn">Start</button>
+
+                <!-- Contains question and answer choices -->
+                <div id="question-div">
+                    <p>Time Remaining: <span id="time-remaining"></span></p>
+                    <p class="lead" id="question-txt"></p>
+                    <hr class="my-4">
+                    <a class="btn btn-primary btn-lg my-2 answer-btn" id="answer-btn-0" role="button"></a>
+                    <a class="btn btn-primary btn-lg my-2 answer-btn" id="answer-btn-1" role="button"></a>
+                    <a class="btn btn-primary btn-lg my-2 answer-btn" id="answer-btn-2" role="button"></a>
+                    <a class="btn btn-primary btn-lg my-2 answer-btn" id="answer-btn-3" role="button"></a>
+                </div>
+
+                <!-- Contains correct answer -->
+                <div id="answer-div">
+                    <p class="lead" id="result-txt"></p>
+                    <p id="answer-txt"></p>
+                </div>
+          </div>
+    </div>
+
     <!-- Link to external Javascript -->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
