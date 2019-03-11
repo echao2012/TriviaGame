@@ -1,3 +1,18 @@
+html {
+    background: url(../images/background.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-backgound-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    background-color: rgba(92, 92, 92, 0.9);
+    background-blend-mode: multiply;
+}
+
+body {
+    background: none;
+    background-color: transparent;
+}
+
 body,
 html {
     height: 100%;

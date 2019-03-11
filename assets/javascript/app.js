@@ -3,52 +3,62 @@ $(document).ready(function() {
     var questions = [{
         q: "How does Harry manage to breathe underwater during the second task of the Triwizard Tournament?",
         a: ["He transfigures into a shark", "He kisses a mermaid", "He eats gillyweed", "He performs a bubble-head charm"],
-        correctAnsIndex: 2
+        correctAnsIndex: 2,
+        img: "../images/"
     },
     {
         q: "What is the name of Fred and George's joke shop?",
         a: ["Weasley Joke Emporium", "Weasleys' Wizard Wheezes", "Fred & George's Wonder Emporium", "Zonko's Joke Shop"],
-        correctAnsIndex: 1
+        correctAnsIndex: 1,
+        img: "../images/"
     },
     {
         q: "Which of these is NOT one of the Unforgivable Curses?",
         a: ["Cruciatus Curse", "Imperius Curse", "Sectumsempra", "Avada Kedavra"],
-        correctAnsIndex: 2
+        correctAnsIndex: 2,
+        img: "../images/"
     },
     {
         q: "Who played Lord Voldemort in the movies?",
         a: ["Jeremy Irons", "Tom Hiddleston", "Gary Oldman", "Ralph Fiennes"],
-        correctAnsIndex: 3
+        correctAnsIndex: 3,
+        img: "../images/"
     },
     {
         q: "Who guards the entrance to the Gryffindor common room?",
         a: ["The Grey Lady", "The Fat Friar", "The Bloody Baron", "The Fat Lady"],
-        correctAnsIndex: 3
+        correctAnsIndex: 3,
+        img: "../images/"
     },
     {
         q: "Who is NOT a member of the Order of the Phoenix?",
         a: ["Cornelius Fudge", "Mad-Eye Moody", "Professor Snape", "Remus Lupin"],
-        correctAnsIndex: 0
+        correctAnsIndex: 0,
+        img: "../images/"
     },
     {
         q: "What does O.W.L. stand for?",
         a: ["Ordinary Wizarding Level", "Official Wizarding Level", "Outstanding Wizard Learning", "Outstanding Wonderful Luck"],
-        correctAnsIndex: 0
+        correctAnsIndex: 0,
+        img: "../images/"
     },
     {
         q: "Where does Hermione brew her first batch of Polyjuice Potion?",
         a: ["The Hogwarts Kitchen", "Moaning Myrtle's Bathroom", "The Room of Requirement", "The Gryffindor Common Room"],
-        correctAnsIndex: 1
+        correctAnsIndex: 1,
+        img: "../images/"
     },
     {
         q: "What's the name of Filch's cat?",
         a: ["Ser Pounce", "Buttercup", "Mrs. Norris", "Jones"],
-        correctAnsIndex: 2
+        correctAnsIndex: 2,
+        img: "../images/"
     },
     {
         q: "Which professor teaches flying lessons?",
         a: ["Professor Grubbly-Plank", "Sybill Trelawney", "Charity Burbage", "Madam Hooch"],
-        correctAnsIndex: 3
+        correctAnsIndex: 3,
+        img: "../images/"
     }];
 
     var qIndex = 0;
@@ -83,7 +93,6 @@ $(document).ready(function() {
         unansweredNum = 0;
 
         // Show the first question
-        
         $("#game-over-div").hide();
         showQuestion();
     })
@@ -138,7 +147,7 @@ $(document).ready(function() {
         }
 
         // Update the answer image
-
+        $("#answer-img").attr("src", questions[qIndex].img);
 
         // Show the answer card
         $("#question-div").hide();
