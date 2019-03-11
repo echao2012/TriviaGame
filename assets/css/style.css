@@ -1,5 +1,30 @@
+body,
+html {
+    height: 100%;
+}
+
+.jumbotron {
+    min-height: 550px;
+}
+
+.container {
+    min-height: 100%;
+}
+
+#start-btn {
+    font-size: 30px;
+    margin-top: 100px;
+}
+
 .answer-btn {
     display: block;
+    max-width: 50%;
+    margin: auto;
+}
+
+#play-again-btn {
+    font-size: 30px;
+    margin-top: 50px;
 }
 
 #question-div,

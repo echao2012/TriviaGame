@@ -19,40 +19,45 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron text-center">
+
+
+
+    <div class="container h-100">
+        <div class="jumbotron text-center my-5 py-4">
+
+            <!-- Title -->
             <h1 class="display-4">Trivia Game</h1>
 
-                <!-- Start button -->
-                <button type="button" class="btn btn-primary" id="start-btn">Start</button>
+            <!-- Start button -->
+            <button type="button" class="btn btn-primary" id="start-btn">Start</button>
 
-                <!-- Contains question and answer choices -->
-                <div id="question-div">
-                    <p>Time Remaining: <span id="time-remaining"></span></p>
-                    <p class="lead" id="question-txt"></p>
-                    <hr class="my-4">
-                    <a class="btn btn-primary btn-lg my-2 answer-btn" id="answer-btn-0" role="button"></a>
-                    <a class="btn btn-primary btn-lg my-2 answer-btn" id="answer-btn-1" role="button"></a>
-                    <a class="btn btn-primary btn-lg my-2 answer-btn" id="answer-btn-2" role="button"></a>
-                    <a class="btn btn-primary btn-lg my-2 answer-btn" id="answer-btn-3" role="button"></a>
-                </div>
+            <!-- Contains question and answer choices -->
+            <div id="question-div">
+                <p>Time Remaining: <span id="time-remaining"></span></p>
+                <p class="lead" id="question-txt"></p>
+                <hr class="my-4">
+                <a class="btn btn-primary btn-lg my-3 answer-btn" id="answer-btn-0" role="button"></a>
+                <a class="btn btn-primary btn-lg my-3 answer-btn" id="answer-btn-1" role="button"></a>
+                <a class="btn btn-primary btn-lg my-3 answer-btn" id="answer-btn-2" role="button"></a>
+                <a class="btn btn-primary btn-lg my-3 answer-btn" id="answer-btn-3" role="button"></a>
+            </div>
 
-                <!-- Contains correct answer -->
-                <div id="answer-div">
-                    <p class="lead" id="result-txt"></p>
-                    <p id="answer-txt"></p>
-                </div>
+            <!-- Contains correct answer -->
+            <div id="answer-div">
+                <h2 id="result-txt"></h2>
+                <p id="answer-txt"></p>
+            </div>
 
-                <!-- Game over -->
-                <div id="game-over-div">
-                    <p>Game Over</p>
-                    <p>Here are your results:</p>
-                    <p>Correct Answers: <span id="correct"></span></p>
-                    <p>Incorrect Answers: <span id="incorrect"></span></p>
-                    <p>Unanswered: <span id="unanswered"></span></p>
-                    <button type="button" class="btn btn-primary" id="play-again-btn">Play Again</button>
-                </div>
-          </div>
+            <!-- Game over -->
+            <div id="game-over-div">
+                <h2 class="my-4">Game Over</h2>
+                <p>Here are your results:</p>
+                <p>Correct Answers: <span id="correct"></span></p>
+                <p>Incorrect Answers: <span id="incorrect"></span></p>
+                <p>Unanswered: <span id="unanswered"></span></p>
+                <button type="button" class="btn btn-primary" id="play-again-btn">Play Again</button>
+            </div>
+        </div>
     </div>
 
     <!-- Link to external Javascript -->
