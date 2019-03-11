@@ -1,3 +1,10 @@
 .answer-btn {
     display: block;
 }
+
+#question-div,
+#answer-div,
+#game-over-div {
+    display: none;
+}
+

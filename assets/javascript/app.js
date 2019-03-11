@@ -25,11 +25,7 @@ $(document).ready(function() {
     var correctNum = 0;
     var incorrectNum = 0;
     var unansweredNum = 0;
-    var secondsRemaining, questionIntervalId, answerTimerId;
-
-    // Show only the start button
-    $("#question-div").hide();
-    $("#answer-div").hide();
+    var secondsRemaining, questionIntervalId;
 
     // Show first question when start button is clicked
     $("#start-btn").on("click", function() {
@@ -47,6 +43,19 @@ $(document).ready(function() {
         } else {
             showAnswer("INCORRECT");
         }
+    })
+
+    $("#play-again-btn").on("click", function() {
+        // Reset variablees
+        qIndex = 0;
+        correctNum = 0;
+        incorrectNum = 0;
+        unansweredNum = 0;
+
+        // Show the first question
+        
+        $("#game-over-div").hide();
+        showQuestion();
     })
 
     function showQuestion() {
@@ -104,8 +113,24 @@ $(document).ready(function() {
         $("#question-div").hide();
         $("#answer-div").show();
 
-        // Start timer to show next question
+        // If this is the last question, show the game over screen
         qIndex++;
-        setTimeout(showQuestion, 3000);
+        if (qIndex < questions.length) {
+            // Start timer to show next question
+            setTimeout(showQuestion, 3000);
+        } else {
+            setTimeout(gameOver, 3000);
+        }
+    }
+
+    function gameOver() {
+        // Update the results
+        $("#correct").text(correctNum);
+        $("#incorrect").text(incorrectNum);
+        $("#unanswered").text(unansweredNum);
+
+        // Show the game over screen
+        $("#answer-div").hide();
+        $("#game-over-div").show();
     }
 })
