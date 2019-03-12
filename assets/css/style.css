@@ -1,3 +1,5 @@
+/* Background  */
+
 html {
     background: url(../images/background.png) no-repeat center center fixed;
         -webkit-background-size: cover;
@@ -8,13 +10,15 @@ html {
     background-blend-mode: multiply;
 }
 
+/* Main body */
+
 body {
     background: none;
     background-color: transparent;
 }
 
 .jumbotron {
-    min-height: 550px;
+    min-height: 575px;
     background-color: rgb(10, 17, 30);
     border: 8px solid rgb(211, 168, 4);
     color: white;
@@ -30,6 +34,8 @@ body {
     display: none;
 }
 
+/* Title */
+
 h1 {
     font-family: 'HarryP';
     font-size: 80px;
@@ -40,9 +46,19 @@ hr {
     border-color: rgb(211, 168, 4);
 }
 
+/* Images */
+
+#answer-img {
+    max-height: 300px;
+    margin-top: 20px;
+    border: 3px solid rgb(211, 168, 4);
+}
+
+/* Buttons */
+
 #start-btn {
     font-size: 30px;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .answer-btn {
@@ -76,6 +92,8 @@ hr {
     background-color: rgb(119, 95, 0) !important;
     border: 3px solid rgb(119, 95, 0) !important;
 }
+
+/* Fonts */
 
 @font-face {
     font-family: 'HarryP';
