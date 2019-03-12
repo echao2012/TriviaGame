@@ -4,7 +4,7 @@ html {
         -moz-backgound-size: cover;
         -o-background-size: cover;
         background-size: cover;
-    background-color: rgba(92, 92, 92, 0.9);
+    background-color: rgba(92, 92, 92, 0.7);
     background-blend-mode: multiply;
 }
 
@@ -13,17 +13,31 @@ body {
     background-color: transparent;
 }
 
-body,
-html {
-    height: 100%;
-}
-
 .jumbotron {
     min-height: 550px;
+    background-color: rgb(10, 17, 30);
+    border: 8px solid rgb(211, 168, 4);
+    color: white;
 }
 
 .container {
     min-height: 100%;
+}
+
+#question-div,
+#answer-div,
+#game-over-div {
+    display: none;
+}
+
+h1 {
+    font-family: 'HarryP';
+    font-size: 80px;
+    color: rgb(211, 168, 4);
+}
+
+hr {
+    border-color: rgb(211, 168, 4);
 }
 
 #start-btn {
@@ -42,9 +56,29 @@ html {
     margin-top: 50px;
 }
 
-#question-div,
-#answer-div,
-#game-over-div {
-    display: none;
+#start-btn,
+#play-again-btn,
+.answer-btn {
+    background-color: rgb(10, 17, 30);
+    border: 3px solid rgb(211, 168, 4);
+}
+
+#start-btn:hover,
+#play-again-btn:hover,
+.answer-btn:hover {
+    background-color: rgb(211, 168, 4);
+    border: 3px solid rgb(211, 168, 4);
+}
+
+#start-btn:active,
+#play-again-btn:active,
+.answer-btn:active {
+    background-color: rgb(119, 95, 0) !important;
+    border: 3px solid rgb(119, 95, 0) !important;
+}
+
+@font-face {
+    font-family: 'HarryP';
+    src: url(../fonts/HarryP.ttf);
 }
 
