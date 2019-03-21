@@ -1,4 +1,6 @@
 # Harry Potter Trivia Game
+**Take the quiz here: https://echao2012.github.io/TriviaGame/**
+
 Test your knowledge of Harry Potter with this trivia game! There are a total of 10 questions, and you will have 30 seconds to answer each question.
 
 ## About
